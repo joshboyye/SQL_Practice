@@ -1,7 +1,7 @@
 # SQL_Practice
 
-#Create Table
-'''
+## Create TABLE
+```
 CREATE TABLE STADIUM (
 STADIUM_ID    CHAR(3) NOT NULL,
 STADIUM_NAME  VARCHAR2(40) NOT NULL,
@@ -47,24 +47,25 @@ HEIGHT NUMBER(3),
 WEIGHT NUMBER(3), 
 CONSTRAINT PLAYER_PK PRIMARY KEY (PLAYER_ID), 
 CONSTRAINT PLAYER_FK FOREIGN KEY (TEAM_ID) REFERENCES TEAM(TEAM_ID) );
+```
 
+## Modify TABLE
+``` 
 ALTER TABLE Stadium ADD /*add하나 테이블 더만들기*/
-Test1 VARCHAR2(10) not null; /*not null 똑같은 번호나 이름 방지 하기 위해서*/
-ALTER TABLE Stadium DROP COLUMN Test1; 
-ALTER TABLE Stadium rename COLUMN Test1 to test2; /*rename 이름 바꾸기*/
-ALTER TABLE Stadium MODIFY (Test1 VARCHAR2(10) not null);
 
-drop table Player2; /*drop테이블 전채삭제*/
-rename player to player2; /*rename 이름 바꾸기*/
+Test1 VARCHAR2(10) not null; /*not null 똑같은 번호나 이름 방지 하기 위해서*/
+
+ALTER TABLE Stadium DROP COLUMN Test1; 
+
+ALTER TABLE Stadium rename COLUMN Test1 to test2; /*rename 이름 바꾸기*/
+
+ALTER TABLE Stadium MODIFY (Test1 VARCHAR2(10) not null);
 
 ALTER TABLE PLAYER DROP CONSTRAINT PLAYER_FK;
 
-ALTER TABLE PLAYER ADD CONSTRAINT PLAYER_FK2 FOREIGN KEY (TEAM_ID) 
-REFERENCES TEAM(TEAM_ID);
+ALTER TABLE PLAYER ADD CONSTRAINT PLAYER_FK2 FOREIGN KEY (TEAM_ID) REFERENCES TEAM(TEAM_ID);
 
-select * from Stadium;
-
-'''
-
-
+DROP TABLE Player2; /*drop테이블 전채삭제*/
+RENAME player TO player2; /*rename 이름 바꾸기*/
+```
 
