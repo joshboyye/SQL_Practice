@@ -1,6 +1,9 @@
 # SQL_Practice
 
-## Create TABLE
+
+## DDL (Data Definition Language)
+
+### Create TABLE
 ```
 CREATE TABLE STADIUM (
 STADIUM_ID    CHAR(3) NOT NULL,
@@ -67,5 +70,11 @@ ALTER TABLE PLAYER ADD CONSTRAINT PLAYER_FK2 FOREIGN KEY (TEAM_ID) REFERENCES TE
 
 DROP TABLE Player2; /*drop테이블 전채삭제*/
 RENAME player TO player2; /*rename 이름 바꾸기*/
+
+TRUNCATE TABLE player; /*=Delete from Player;*/
 ```
+
+## DML (Data Manipulation Language)
+
+
 
