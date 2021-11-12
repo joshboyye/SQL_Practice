@@ -58,7 +58,7 @@ ALTER TABLE Stadium ADD /*add하나 테이블 더만들기*/
 
 Test1 VARCHAR2(10) not null; /*not null 똑같은 번호나 이름 방지 하기 위해서*/
 
-ALTER TABLE Stadium DROP COLUMN Test1; 
+ALTER TABLE Stadium DROP COLUMN Test1;  
 
 ALTER TABLE Stadium rename COLUMN Test1 to test2; /*rename 이름 바꾸기*/
 
