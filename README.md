@@ -76,5 +76,23 @@ TRUNCATE TABLE player; /*=Delete from Player;*/
 
 ## DML (Data Manipulation Language)
 
+```
+UPDATE PLAYER SET JOIN_YYYY = 2021 where Player_Id = 2009175;
 
+update player set join_yyyy = 2021;
+
+delete player where player_id = 2010112;
+
+select p.player_name as players, p.player_id as id, p.join_YYYY as join 
+from player p;
+
+select * 
+from player
+where position = 'DF'
+AND TEAM_ID = 'K04'
+AND SOLAR = 2
+AND Weight <= 77;
+
+select 컬럼 from 테이블 ;
+```
 
