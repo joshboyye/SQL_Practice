@@ -72,7 +72,7 @@ DROP TABLE Player2; /*drop테이블 전채삭제*/
 RENAME player TO player2; /*rename 이름 바꾸기*/
 
 TRUNCATE TABLE player; /*=Delete from Player;*/
-```
+``` 
 
 ## DML (Data Manipulation Language)
 
@@ -96,3 +96,40 @@ AND Weight <= 77;
 select 컬럼 from 테이블 ;
 ```
 
+## TCL (Data control language)
+```
+COMMIT; //데이터를 저장함 commit안하면 저장 안됌
+rollback; /*한 데이터를delete한 다음 rollback를하면 그 데이터를 다시 대돌릴수있는 명령어*/
+SAVEPOINT; /**/
+
+```
+## WHERE 절 
+```
+select*
+from player(table name)
+where Player_name like '이_';
+% persent = 성이 이 시 인사람 다 조해 해보기
+_ underline = 성 두글자나 이_ 옆에 있는 글자를 조회해보기s
+
+select*
+from player(table name)
+where HEIGHT(ROW 에 있는 ID) = 180 
+
+> more than 
+>= more than equal
+<less than 
+<=less than equal 
+
+"like" = 쓰는거
+ 
+where HEIGHT between 170 and 180;
+BETWEEN a AND b = a와 b의 값 사이에 있는거를 조회  /*ex. 키 170 에서 180 조회 where height between 170 and 180*/;
+
+and //true and false 
+or //true or true 
+not 무조건 아닌것 조회 
+
+!= not equal 같지 않다 
+
+
+```
