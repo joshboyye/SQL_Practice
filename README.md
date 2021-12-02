@@ -90,10 +90,31 @@ select *
 from player
 where position = 'DF'
 AND TEAM_ID = 'K04'
-AND SOLAR = 2
+AND SOLAR = 2 
 AND Weight <= 77;
 
 select 컬럼 from 테이블 ;
+
+
+문자형 함수
+lower 
+upper 
+substr/substring 
+length/len
+LTRIM 
+RTRIM
+TRIM
+
+숫자함수 
+ABS
+SIGN
+MOD 
+ROUND 
+TRUND
+
+CASE (if statement)
+CASE 
+
 ```
 
 ## TCL (Data control language)
@@ -131,5 +152,9 @@ not 무조건 아닌것 조회
 
 != not equal 같지 않다 
 
+
+```
+##group by, having 절
+```
 
 ```
