@@ -154,13 +154,13 @@ not 무조건 아닌것 조회
 
 
 ```
-##GROUP BY, HAVING 절
+## GROUP BY, HAVING 절
 ```
 group by // 테이블에 있는 id들 하고 avg를 사용한다음 id들을 정리를 해준다 
 
 ```
 
-##ORDER BY 
+## ORDER BY 
 ```
 order by // grouping up by using decending order or ascending order 
 desc //descending order 
