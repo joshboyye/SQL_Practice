@@ -131,7 +131,7 @@ from player(table name)
 where Player_name like '이_';
 % persent = 성이 이 시 인사람 다 조해 해보기
 _ underline = 성 두글자나 이_ 옆에 있는 글자를 조회해보기s
-
+ 
 select*
 from player(table name)
 where HEIGHT(ROW 에 있는 ID) = 180 
@@ -156,5 +156,28 @@ not 무조건 아닌것 조회
 ```
 ##group by, having 절
 ```
+group by // 테이블에 있는 id들 하고 avg를 사용한다음 id들을 정리를 해준다 
+
+```
+
+##order by  
+```
+order by // grouping up by using decending order or ascending order 
+desc //descending order 
+asc //ascending order
+
+```
+##join 
+```
+player에 있는 테이블에 team 으로 join 하면 player 하고 team테이블 둘다 조회할수있다 
+
+select *
+from player p, team t
+where p.height <170
+and p.team_id = t.team_id;
+
+select *
+from player p inner join team t
+on p.team_id = t.team_id;
 
 ```
