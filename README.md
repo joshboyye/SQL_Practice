@@ -154,20 +154,20 @@ not 무조건 아닌것 조회
 
 
 ```
-##group by, having 절
+##GROUP BY, HAVING 절
 ```
 group by // 테이블에 있는 id들 하고 avg를 사용한다음 id들을 정리를 해준다 
 
 ```
 
-##order by  
+##ORDER BY 
 ```
 order by // grouping up by using decending order or ascending order 
 desc //descending order 
 asc //ascending order
 
 ```
-##join 
+## JOIN 
 ```
 player에 있는 테이블에 team 으로 join 하면 player 하고 team테이블 둘다 조회할수있다 
 
