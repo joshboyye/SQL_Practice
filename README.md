@@ -181,3 +181,4 @@ from player p inner join team t
 on p.team_id = t.team_id;
 
 ```
+- [ ] SQL Suck 
